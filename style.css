@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(100, 100, 100, 0.885), rgb(67, 67, 67));
+    height: 100vh;
+    background-image: url(images/pexels-bess-hamiti-83687-36487.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+.signIn {
+    font-size: 30px;
+    margin: 10px 30px 20px 30px;
+    color: rgba(238, 238, 238, 0.955);
+}
+
+.description {
+    font-size: 21px;
+    margin: -5px 0px 20px 0px;
+    color: rgba(255, 255, 255, 0.793);
+}
+
+.placeholderEmail {
+    margin: 0px 0px 0px -274px;
+    color: rgba(255, 255, 255, 0.793);
+}
+
+.placeholderPW {
+    margin: 0px 0px 0px -249px;
+    color: rgba(255, 255, 255, 0.793);
+
+}
+
+a {
+    color: rgba(255, 255, 255, 0.793);
+    font-style: italic;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: rgba(172, 172, 172, 0.938);
+}
+
+#email {
+    width: 350px;
+    height: 28px;
+    margin: 0px 20px 20px 20px;
+    padding-left: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.793);
+    border: solid 1px rgba(159, 159, 159, 0.319);
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px inset rgba(0, 0, 0, 0.714);
+    transition: transform 0.2s ease;
+}
+
+#email:hover {
+    transform: scale(1.02);
+}
+
+#password {
+    width: 350px;
+    height: 28px;
+    margin: 0px 20px 8px 20px;
+    padding-left: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.793);
+    border: solid 1px rgba(159, 159, 159, 0.319);
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px inset rgba(0, 0, 0, 0.714);
+    transition: transform 0.2s ease;
+}
+
+#password:hover {
+    transform: scale(1.02);
+}
+
+#rememberMe {
+    margin: 0px 0px 20px 0px;
+}
+
+.rememberMe, .noAccount {
+    color: rgba(255, 255, 255, 0.793);
+}
+
+.forgotPW{
+    display: inline;
+    margin: 0 0 20px 100px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.727);
+    color: black;
+    margin: 15px 0 0 0;
+    width: 180px;
+    height: 28px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.341);
+    transition: background-color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+button:hover {
+    background-color: rgba(59, 59, 59, 0.633);
+    color: white;
+}
+
+#shapeBox {
+    background-color: rgba(255, 255, 255, 0.084);
+    padding: 5px 0 20px 0;
+    margin: 10px 20px 0 20px;
+    border: solid 2px rgba(245, 245, 245, 0.088);
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.515);
+    backdrop-filter: blur(50px);
+    transform: scale(0.99);
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+#shapeBox:hover {
+    transform: scale(1.01);
+}
+
+@media(max-width: 425px) {
+    .placeholderEmail {
+        margin: 0 0 0 0;
+    }
+
+    .placeholderPW {
+        margin: 0 0 0 0;
+    }
+
+    #email {
+        width: 200px;
+    }
+
+    #password {
+        width: 200px;
+    }
+
+    .forgotPW {
+        margin: 0 0 20px 10px;
+    }
+}
+
+@media(min-width: 590px) {
+    #shapeBox {
+        width: 570px;
+        margin: 20px auto 0 auto;
+    }
+}
